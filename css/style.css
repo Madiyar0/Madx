@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ @font-face {
+    font-family: 'Gotham Pro'; /* Имя шрифта */
+    src: url(../fonts/GothamPro-Black.ttf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+    font-family: 'Gotham Pro Medium';
+    src: url(../fonts/GothamPro-Medium.ttf);
+    }
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Commissioner', sans-serif;
+}
+img {
+	max-width: 100%;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}
+.container {
+	width: 1216px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+}
+.header{
+   padding-top: 21px;
+   padding-bottom: 21px;	
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+nav ul {
+	width:891px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+nav ul a li {
+	font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	color: #151515;
+	text-transform: uppercase; 
+}
+.lang-list {
+	display: flex;
+	justify-content: space-between;
+	width: 63px;
+	align-items: center;	
+}
+.lang-list .p {
+	font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	color: #747474;
+}
+.block1 {
+	background-image: url("../img/Group 4645 (1).jpg");
+    background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.fon_title {
+	position: absolute;
+	top:50%;
+	width: 486px;
+	display: flex;
+	flex-direction: column;
+}
+.fon_title .h1{
+	font-family: 'Gotham Pro';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 54px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+.fon_title .p {
+	font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	color: #FFFFFF;
+	margin-top: 22px;
+}
+.block2 {
+	position: relative;
+	bottom: 60px;
+	height: 133px;
+}
+.links {
+	height: 133px;
+	background: #fff;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.links_a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 41px 57px;
+}
+.links a {
+	font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	text-transform: uppercase;
+    color: #151515;
+}
+.links_img {
+	width: 916px;
+	margin: 0 auto;
+}
+.links_img img {
+	width: 100%;
+	margin-top: 17px;
+}
+
+.main_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.main_img {
+	width: 45%;
+}
+.main_img img {
+	width: 100%;
+}
+.main_text {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+}
+.default .h1 {
+	font-family: 'Gotham Pro';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 42px;
+	color: #151515;
+	width: 601px;
+}
+.default .p {
+    width: 601px;
+    font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #444444;
+	line-height: 1.5;
+	margin-top: 20px;
+}
+.center {
+	margin-top: 83px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.center .h1 {
+	width: 667px;
+}
+.center .p {
+	font-size: 18px;
+	margin-top: 14px;
+}
+.podr {
+	width: 490px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.podr a, button {
+	margin-top: 36px;
+	font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	color: #151515;
+	padding: 13px 32px;
+	background: #FFD336;
+	border-radius: 4px;
+	border: 2px solid #FFD336;
+	transition: 0.8s all ease;
+	cursor: pointer;
+}
+.podr a:hover {
+	background: #fff;
+	border: 2px solid #151515;
+}
+.podr button:hover {
+    background: #fff;
+	border: 2px solid #151515;	
+}
+
+.main_slider {
+    margin-top: 54px;
+    z-index: 10;
+}
+.main_slide {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+   transform: scale(0.9);transition: 0.5s;}
+.main_slide .h1 {
+	margin-top: 33px;
+	font-family: 'Gotham Pro';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	color: #212121;
+}
+.main_slide .p {
+	font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #666666;
+	margin-top: 14px;
+	width: 377px;
+	line-height: 1.5;
+}
+
+.slick-list.draggable {
+    padding: 0 !important;
+        margin: 0 -17px;
+}
+.main_slide > img {
+    width: 100%;
+}
+.main_slide.slick-slide.slick-current.slick-active + .main_slide.slick-slide.slick-active {transform: scale(1.05);}
+
+
+.block4	{
+	position: relative;
+}
+.slickarrow {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 55%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.mask {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.prev {
+	margin-left: -50px;
+}
+.next {
+	margin-right: -50px;
+}
+
+.block5{
+	margin-top: 83px;
+	background-image: url("../img/Group 4612.jpg");
+    background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 458px;
+	position: relative;
+}
+
+.block5 .default {
+   position: absolute;
+   top:30%;
+}
+.block5 .default .h1 {
+	color:#fff;
+}
+.block5 .default .p {
+	color:#fff;
+}
+.block5 .default a:hover {
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+}
+.sell_slider {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 54px;
+}
+.sell {
+	display: flex;
+	flex-direction: column;
+}
+.sell_img {
+	border: 1px solid #CCCCCC; 
+	display: flex;
+	flex-direction: column;
+}
+.have {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.sell_img img {
+	padding: 60px 43px;
+	width: 80%;
+	height: 250px;
+}
+.have {
+	width: 124px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.have .h1 {
+	font-family: 'Gotham Pro';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	color:#151515;
+}
+.sell_text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 39px;
+}
+.sell_text .h1 {
+	 font-family: 'Gotham Pro Medium';	 
+	 font-size: 19px;
+	 color: #151515;
+}
+.sell_text a {
+	font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	text-decoration-line: underline;
+    color: #666666;
+    margin-top: 5px;
+}
+
+.block6 {
+	position: relative;
+}
+.sell_slider .slick-list {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.sell_slider .slick-slide {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.block6 .slickarrow {
+	top: 60%;
+}
+.prevs {
+	margin-left: -50px;
+}
+.nexts {
+	margin-right: -50px;
+}
+.block7 {
+	margin-top: 83px;
+}
+
+.block8  {
+	margin-top: 83px;
+	background-image: url("../img/Group 4612 (1).jpg");
+    background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 458px;
+	position: relative;
+}
+.block8 .default {
+   position: absolute;
+   top:30%;
+}
+.block8 .default .h1 {
+	color:#fff;
+}
+.block8 .default .p {
+	color:#fff;
+}
+.block8 .default a:hover {
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+}
+.block9 {
+	margin-top: 83px;
+}
+
+.block10 {
+	margin-top: 83px;
+}
+.fonmega_img {
+	background-image: url("../img/Group 4411.jpg");
+    background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 665px;
+	position: relative;
+}
+.fonmega_img .default {
+	position: absolute;
+	top:25%;
+}
+.fonmega_img .default .h1 {
+	color:#fff;
+}
+.fonmega_img .default .p {
+	color:#fff;
+}
+.fonmega_img .default a:hover {
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+}
+.advantages {
+	width:1112px;
+	height: 373px;
+	background: #fff;
+	box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.12);
+}
+.advan_slider {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding:69px 72px;
+}
+.advan {
+	display: flex;
+	flex-direction: column;
+}
+.ad_img {
+	display: flex;
+	align-items: center;
+}
+.ad_img .h1 {
+	font-family: 'Gotham Pro';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	color: #444444;
+	width: 190px;
+	margin-left: 3px;
+}
+.advan .p {
+	font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #444444;
+	width: 299px;
+	line-height: 1.5;
+}
+.advantages {
+	position: relative;
+	bottom:200px;
+	left: 129px;
+}
+.block10 .container {
+	height: 200px;
+}
+.advantages .slickarrow {
+	position: absolute;
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width:101px;
+	left: 43%;
+	top:70%;
+}
+.advantages .mask {
+	align-items: center;
+}
+
+}
+.imagez {
+	margin-top:54px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	z-index: 0;
+}
+
+.opyt {
+	margin-top: 54px;
+	position: relative;
+	background-image: url("../img/Group 4646 (1).png");
+    background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 558px;
+}
+.safety {
+	z-index: 100;
+	position: absolute;
+	top:75%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+    justify-content: space-between;
+}
+.safe {
+	background: #fff;
+	z-index: 100;
+	width: 23%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 42px 50px;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+}
+
+.safe_img {
+	display: flex;
+	align-items: center;
+}
+.safe_img .h1 {
+	width: 200px;
+	font-family: 'Gotham Pro Medium';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 19px;
+	color: #151515;
+	margin-left: 16px;
+}
+.safe .p {
+	width: 300px;
+	font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #666666;
+	margin-top: 10px;
+}
+.safe {
+	height: 200px;
+}
+.mode {
+	height: 260px;
+}
+
+.block12 {
+	margin-top: 327px;
+	background-image: url("../img/map2 2.jpg");
+    background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 558px;
+	position: relative;
+}
+
+.contacts {
+	position: absolute;
+	right:150px;
+	top:67px;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 112px 57px 106px 44px;
+}
+.contacts .default {
+	position: relative;
+}
+.contacts .default .h1 {
+	width: 100%;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contacts .gis .p {
+	font-family: 'Commissioner';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+}
+.contacts .default .h1::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    margin-bottom: -23px;
+    width: 61px;
+    height: 4px;
+    background: #FFD336;
+}
+.gis {
+	width: 249px;
+	display: flex;
+	align-items: center;
+	margin-top: 44px;
+}
+
+.gis .p {
+	margin-left: 20px;
+}
+.subs {
+	background: #222222;
+}
+.subscribe {
+	background: #303030;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.cery {
+	background: #303030;
+}
+.linkez {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 470px;
+}
+.linkez .p {
+	font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #BEBEBE;
+}
+
+.hr {
+	width: 100%;
+	margin: 0 auto;
+}
+.menu {
+	background: #222222;
+}
+.joji .header nav ul li {
+	color:#fff;
+}
+.prava_wrap {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.dogo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 430px;
+}
+.scc {
+	font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	color: #8C9AA4;
+}
+.dogo .p {
+	font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	color: #818181;
+}
+.lang-list {
+    position: relative;
+}
+.lang-list:hover .language {
+    display: block;
+}
+.language {
+    display:none;
+    position: absolute;
+    top:  100%;
+    left: 10px;
+    width: 45px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
